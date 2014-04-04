@@ -44,7 +44,6 @@
 				<section>
 					<h2>Heads Up</h2>
 					<p class="fragment">assuming you know a thing or two about themeing.</p>
-					<p class="fragment">..helps if you work a lot on frontend</p>
 					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
@@ -185,7 +184,7 @@
 				</section>
 
 				<section data-background="images/clean-code.jpg" data-background-size="1024px">
-					<h1>keeps your markup lean and clean</h1>
+					<p>keeps your markup lean and clean</p>
 				</section>
 
 				<section data-background="images/automate.jpg" data-background-size="1024px">
@@ -193,9 +192,26 @@
 				</section>
 
 				<section data-background="images/headless.jpg" data-background-size="1024px">
-					<h1>Headless browser testing</h1>
-					<p class="fragment">Ghost story</p>
-					<p class="fragment">can be integrated with CI.</p>
+					<h1>Headless browsers</h1>
+					<p class="fragment"><a href="http://hardy.io/">Hardy</a></p>
+					<p class="fragment">can be wired with your CI pipeline.</p>
+				</section>
+
+				<section>
+				    <pre><code class="language-scss">
+Feature: Website layout test
+    As a user I want visual consistency on the http://csste.st/ website
+
+    Scenario: Content layout
+    Given I visit "http://csste.st/"
+    Then "section > p" should have "color" of "rgb(68, 68, 68)"
+</code></pre>
+					<p class="fragment">good for testing UI specs</p>
+					<p class="fragment">Cucumber syntax</p>
+				</section>
+
+				<section data-background="images/lint.jpg" data-background-size="1024px">
+					<p>Use <a href="http://csslint.net/">CSSlint</a> to detect smelly CSS.</p>
 				</section>
 
 				<section data-background="images/demo-time.jpg" data-background-size="1024px">
@@ -211,8 +227,8 @@
 				</section>
 
 				<section data-background="images/takeaways.jpg" data-background-size="1024px">
-				        <h2>Function of a themer</h2>
-					<p>To "Drupalize" DOM which you have themed.</p>
+					<p>Always "Drupalize" DOM which you have themed</p>
+					<p class="fragment">... not the other way round.</p>
 				</section>
 
 				<section data-background="images/takeaways.jpg" data-background-size="1024px">
