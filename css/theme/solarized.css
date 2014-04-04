@@ -21,8 +21,8 @@ html * {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fdf6e3;
-  background-color: #fdf6e3; }
+  background: #ecf0f1;
+  background-color: #ecf0f1; }
 
 .reveal {
   font-family: "Lato", sans-serif;
@@ -150,4 +150,19 @@ body {
 .reveal p {
   background: #2c3e50;
   color: #ecf0f1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#image-credits {
+  font-size: 15px;
+  list-style-type: none;
+}
+
+#image-credits li {
+  height: 20px;
+}
+
+#image-credits a {
+  color: #2c3e50;
 }
